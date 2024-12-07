@@ -2,18 +2,18 @@
 #include<conio.h>
 main(){
 
-	int first,second,third;
+	int Firstangle,Secondangle,Thirdangle;
 	clrscr();
 
 	printf("First angle:");
-	scanf("%d",&first);
+	scanf("%d",&Firstangle);
 
-	printf("second angle:");
-	scanf("%d",&second);
+	printf("\nsecond angle:");
+	scanf("%d",&Secondangle);
 
-	third= 180 -(first+second);
+	Thirdangle= 180 -(Firstangle+Secondangle);
 
-	printf("third angle:%d",third);
+	printf("\nthird angle:%d",Thirdangle);
 	getch();
 
 

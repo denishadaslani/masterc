@@ -1,0 +1,99 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,c,d,e;
+	clrscr();
+
+	printf("Enter number of a,b,c,d and e:");
+	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+
+	if(a==b && a==c && a==d && a==e && b==c && b==d && b==e && c==d && c==e && d==e)
+	{
+	   printf("all are equal..");
+	}
+	else if(a==b ||  a==c || a==d || a==e || b==c || b==d || b==e || c==d || c==e || d==e)
+	{
+	   printf("both are equal..");
+	}
+	else
+	{
+	  if(a>b)
+	  {
+	    if(a>c)
+	    {
+	     if(a>d)
+	     {
+	      if(a>e)
+	      {
+	       printf("%d is maximum:",a);
+	      }
+	      else
+	      {
+	       printf("%d is maximum:",e);
+	      }
+	      }
+	      else
+	      {
+	       printf("%d is maximum:",d);
+	      }
+	    }
+	      else
+	      {
+	       printf("%d is maximum:",c);
+	      }
+	    }
+
+
+	  else if(b>c)
+	  {
+	    if(b>d)
+	    {
+	      if(b>e)
+	      {
+		printf("%d is maximum",e);
+	      }
+	      else
+	      {
+	       printf("%d is maximum",d);
+	      }
+	    }
+	    else
+	    {
+	     printf("%d is maximum",c);
+	    }
+
+	  }
+
+
+       else if(c>d)
+       {
+	   if(c>e)
+	   {
+	     printf("%d is maximum",c);
+	   }
+	   else
+	   {
+	     printf("%d is maximum",e);
+	   }
+
+       }
+
+       else
+       {
+	 if(d>e)
+	 {
+	  printf("%d is maximum",d);
+	 }
+	 else
+	 {
+	  printf("%d is maximum",e);
+	 }
+
+
+       }
+
+
+	getch();
+
+}

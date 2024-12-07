@@ -2,19 +2,23 @@
 #include<conio.h>
 main()
 {
+	int i=0;
 	int n;
+	int sum=0;
 	clrscr();
 	printf("enter any number:");
 	scanf("%d",&n);
+	while(i<=n)
+	{
+		//sum=sum+i;
+		//printf("%d\n",i);
+		sum+=i;
+		i++;
 
-	if((n/2)*2==n)
-	{
-		printf("it is even number:");
 	}
-	else
-	{
-		printf("it is a odd number:");
-	}
+	printf("%d",sum);
+
 	getch();
+
 
 }

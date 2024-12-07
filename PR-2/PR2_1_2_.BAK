@@ -16,13 +16,15 @@ main()
 				?'A'
 				:(marks>=80 && marks<90)
 							?'B'
-							:(marks>70 && marks<=80)
+							:(marks>=70 && marks<80)
 										? 'C'
-										:(marks>60 && marks<=70)
+										:(marks>=50 && marks<70)
 													? 'D'
-													:(marks>50 && marks<=60)
+													:(marks>=33 && marks<50)
 																?'E'
-																:'F';
+																:(marks<33)
+																?'f'
+																:printf("you are fail");
 
 printf("your grade is  %c.",grade);
 switch(grade)

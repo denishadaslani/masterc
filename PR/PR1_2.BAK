@@ -13,7 +13,7 @@ main(){
 	ta=(bs*8)/100;
 	ans=bs+hra+da+ta;
 
-	printf("gross salary:%d",ans);
+	printf("\ngross salary:%d",ans);
 
 	getch();
 
