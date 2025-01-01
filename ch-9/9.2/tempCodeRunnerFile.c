@@ -1,0 +1,2 @@
+gets(name);
+    // puts(name);
