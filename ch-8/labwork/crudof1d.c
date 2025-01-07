@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main()
 {
     int size;
@@ -19,26 +18,26 @@ int main()
     printf("\nArray output\n");
     for(int i=0;i<size;i++)
     {
-        printf("%d",a[i]);
-        printf("\n");
+        printf(" %d",a[i]);
+       
     }
  
     int ch;
+    int value;
+    int pos;
 
-    printf("1.insert\n");
+do
+{
+    printf("\n1.insert\n");
     printf("2.display\n");
     printf("3.update\n");
     printf("4.delete\n");
     printf("5.Exit\n");
 
+    printf("\n");
     printf("\nEnter your choice:");
     scanf("%d",&ch);
 
-        int value;
-        int pos;
-
-do
-{
     switch(ch)
     {
        
@@ -55,17 +54,49 @@ do
         }
         size++;
         a[pos] = value;
+        printf("\n");
         break;    
 
         case 2:
+
+        printf("\n\n");
         for (int  i = 0; i < size; i++)
         {
           printf("%d",a[i]);
         }
+            printf("\n\n");
         
+        break;
+
+        
+
+        case 3:
+         printf("Enter value:");
+         scanf("%d",&value);
+
+         printf("Enter your position:");
+         scanf("%d",&pos);
+
+         a[pos] = value;
+
+        break;
+
+        case 4:
+       
+        printf("\n");
+
+            printf("Enter your position");
+            scanf("%d",&pos);
+
+            for (int i = pos; i < size; i++)
+            {
+                a[i] = a[i+1];
+            }
+            size--;
+            
         break;
     }
   
-} while (ch != a[pos]);
+} while (ch != 5);
   
 }
