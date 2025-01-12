@@ -6,15 +6,11 @@ void main()
 
     char *ptr[20];
 
-    int len = 0;
-
     printf("Enter any string :");
     scanf("%[^\n]", &str);
 
-    for (int i = 0; str[i] != '\0'; i++, len++)
-    {
-        ptr[i] = &str[i];
-    }
-
+    int len = 0;
+    for (char *ptr = str; *ptr != '\0'; ptr++, len++)
+        ;
     printf("The length of a string is : %d", len);
 }
