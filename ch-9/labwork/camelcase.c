@@ -7,19 +7,20 @@ int main()
     scanf("%[^\n]", &name);
 
     printf("%s\t", name);
+    printf("\n\n");
 
-    // for (int i = 0; name[i] != '\0'; i++)
-    // {
-    //     if (name[i] == 32)
-    //     {
-    //         name[i] = '0';
-    //     }
-    // }
+    for (int i = 0; name[i] != '\0'; i++)
+    {
+        if (name[i] == 32)
+        {
+            name[i] = '0';
+        }
+    }
 
     for (int i = 0; name[i] != '\0'; i++)
     {
 
-        if (name[i] = '0')
+        if (name[i] == '0')
         {
             i++;
             if (name[i] >= 'a' && name[i] <= 'z')
@@ -27,10 +28,11 @@ int main()
                 name[i] -= 32;
             }
         }
-        else if(name[i] >= 'A' && name[i] <= 'Z')
+        else if (name[i] >= 'A' && name[i] <= 'Z')
         {
-            name[i] +=32;
+            name[i] += 32;
         }
-        printf("\nName: %c", name[i]);
+
+        printf("%c", name[i]);
     }
 }
