@@ -9,7 +9,7 @@ void main()
     even = fopen("even_file.txt", "w");
     odd = fopen("odd_file.txt", "w");
 
-    if (even != '\0' || odd != '\0')
+    if (even != '\0' && odd != '\0')
     {
         printf("file is open..\n");
 
@@ -23,9 +23,9 @@ void main()
             {
                 fprintf(odd, "%d\t", i);
             }
-            fclose(even);
-            fclose(odd);
         }
+        fclose(even);
+        fclose(odd);
     }
     else
     {
