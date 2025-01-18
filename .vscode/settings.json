@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "AGE.C": "cpp",
+        "LADDER.C": "cpp",
+        "TERERY_M.C": "cpp",
+        "PATTERN.C": "cpp",
+        "UNARY_PR.C": "cpp",
+        "Q1PATTER.C": "cpp",
+        "Q2PATTER.C": "cpp"
+    }
+}

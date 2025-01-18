@@ -47,10 +47,10 @@ main()
 
     if (cmp == 0)
     {
-        printf("%s is palidrom");
+        printf("it is palidrom");
     }
     else
     {
-        printf("%s is not palidrom");
+        printf(" it is not palidrom");
     }
 }

@@ -3,7 +3,6 @@
 
 main()
 {
-
     char e1[] = "admin@gmail.com";
     char p1[] = "123456";
 

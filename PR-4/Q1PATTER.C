@@ -4,7 +4,7 @@ void main()
 {
 	int i;
 	int j;
-	clrscr();
+	// clrscr();
 	for(i=41;i<=45;i++)
 	{
 	  for(j=41;j<=i;j++)

@@ -1,22 +1,21 @@
-#include<stdio.h>
-#include<conio.>
+#include <stdio.h>
+// #include <conio.>
 
 main()
 {
 	int age;
-	clrscr();
+	// clrscr();
 	printf("enter your age:");
-	scanf("%d",&age);
+	scanf("%d", &age);
 
-	if(age>=18)
+	if (age >= 18)
 	{
 		printf("you can vote...");
 	}
 	else
 	{
-		 printf("you can not vote");
+		printf("you can not vote");
 	}
 
-	getch();
-
+	// getch();
 }
