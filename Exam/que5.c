@@ -11,15 +11,14 @@ void main()
 {
     int size;
 
-    printf("Enter number of  book details:");
+    printf("Enter number book:");
     scanf("%d", &size);
-    printf("\n\n");
-
     struct Book N[100];
 
     for (int i = 0; i < size; i++)
     {
-        // fflush(stdin);
+
+        printf("\nbook of details %d:\n", i + 1);
         printf("Enter book title:");
         scanf("%s", &N[i].title);
 

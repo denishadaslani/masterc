@@ -10,7 +10,7 @@ void main()
 
     if (e1 != '\0')
     {
-        printf("file is open..");
+        printf("file is open..\n");
 
         printf("Enter any employe:");
         scanf("%d", &size);

@@ -12,10 +12,9 @@ int sumArray(int a[], int size)
 
 void main()
 {
-
     int size;
 
-    printf("Enter any size");
+    printf("Enter any size:");
     scanf("%d", &size);
 
     int a[size];
