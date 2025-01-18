@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void main()
 {
     int size;
@@ -22,18 +21,18 @@ void main()
         a[i] = a[n];
         a[n] = c;
     }
-
-    printf("\n\n");
-
+    printf("Reverse array:\n");
     for (int i = 0; i < size; i++)
     {
-        printf("%d\n", a[i]);
+        printf("%d\t", a[i]);
     }
 
+    printf("\n\n");
     int sum = 0;
     for (int i = 0; i < size; i++)
     {
-        sum += a[i];
-        printf("%d\n", a[i]);
+        sum = sum + a[i];
     }
+
+    printf("Sum is : %d", sum);
 }
